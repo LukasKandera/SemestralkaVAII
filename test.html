@@ -3,33 +3,75 @@
 <head>
 	<meta charset="utf-8">
 	<title>Archív na DnD</title>
-	<script type="text/javascript"></script>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.header {
+		  background-color: seagreen;
+		  padding: 30px;
+		  text-align: center;
+		  font-size: 35px;
+		}
+
+		.row {
+		  display: -webkit-flex;
+		  display: flex;
+		}
+
+		.column {
+		  padding: 10px;
+		  height: 900px;
+		}
+
+		.column.side {
+		   -webkit-flex: 1;
+		   -ms-flex: 1;
+		  flex: 1;
+		}
+
+		.column.middle {
+		  -webkit-flex: 2;
+		  -ms-flex: 2;
+		  flex: 2;
+		}
+		@media (max-width: 100px) {
+		  .row {
+		    -webkit-flex-direction: column;
+		    flex-direction: column;
+		  }
+		}
+	</style>
 </head>
 <body>
-	<h1 id="nadpis1">
-		Archív na DnD
-	</h1>
-	<h2 id="nadpisDva">
-		Tolkien
-	</h2>
-	<p>
-		Tolkien rád vymýšľal fantastické príbehy pre zábavu svojich detí. Každé Vianoce pre nich napísal listy typickým roztraseným písmom Santa Clausa a zostavil tak sériu krátkych príbehov – neskôr zozbieranú a publikovanú ako The Father Christmas Letters.
-	</p>
-	<div>
-		Tolkien nikdy neočakával, že jeho vymyslené príbehy budú zaujímať viac než iba úzku skupinu ľudí. Na naliehanie bývalého študenta publikoval knihu The Hobbit (1937) (v slovenčine Hobit), ktorú pôvodne napísal iba pre svoje deti. Aj keď bola určená deťom, kniha si získala aj dospelých čitateľov a stala sa takou populárnou, že nakladateľ, firma Allen & Unwin, požiadal Tolkiena o napísanie pokračovania. To ho inšpirovalo k vytvoreniu jeho najznámejšieho diela, ktorým sa stal výpravný trojdielny román The Lord of the Rings (1954 – 55) (v slovenčine Pán prsteňov). Tolkien k jeho napísaniu potreboval takmer 10 rokov, počas ktorých bol neustále povzbudzovaný v klube Inklings, najviac však svojím najbližším priateľom C. S. Lewisom, autorom kníh o Narnii.
-	</div>
-	<div>
-		<img src="https://pbs.twimg.com/profile_images/435908881772838912/xnyETnmq_400x400.jpeg" alt="J.R.R.Tolkien">
+	<div class="header">
+  		<h1>Archív na DnD</h1>
+  	</div>
+	<div class="row">
+  		<div class="column side" style="background-color: dimgray;">
+		    <ul>
+		    	<li><a href="test.html">Hlavná stránka</a></li>
+		      	<li><a href="podpriecinok/podstranka.html">Predmety</a></li>
+		      	<li><a href="podpriecinok/podstranka1.html">Nehráčské postavy</a></li>
+		      	<li>Mapy</li>
+		  	</ul>
+  </div>
+  <div class="column middle" style="background-color: whitesmoke;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  
 
-		<a href="https://www.google.com">Google</a>
-	</div>
-	<div>
-	<ul>
-	  <li><a href="podpriecinok/podstranka.html">Predmety</a></li>
-	  <li>Nehráčské postavy</li>
-	  <li>Mapy</li>
-	</ul>
-	</div>
 </body>
 </html>

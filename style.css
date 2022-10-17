@@ -28,6 +28,9 @@ body {
   padding: 10px;
 }
 .column.box {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-style: solid;
   margin: 3px;
 }
